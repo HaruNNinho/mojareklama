@@ -299,12 +299,12 @@ header {
 
 footer {
   background: var(--color-bg1);
+  width: 100%;
   padding-top: 5rem;
   font-size: 0.9rem;
 }
 .footer__container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 5rem;
 }
 .footer__container > div h4 {
@@ -326,10 +326,21 @@ footer ul li a:hover {
   margin-top: 2rem;
 }
 .footer__copyright {
+  position: relative;
   text-align: center;
   margin-top: 4rem;
   padding: 1.2rem 0;
   border-top: 1px solid var(--color-bg2);
+  width: 100%;
+}
+.mySwiper
+{
+  position: relative;
+  overflow-x: hidden;
+}
+.footer 
+{
+  width: 100%;
 }
 /* ===================== MEDIA QUERIES (TABKETS================ */
 @media screen and (max-width: 1024px) {
